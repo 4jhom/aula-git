@@ -44,12 +44,12 @@ public class MenuPrincipalController implements Initializable {
     }
 
     @FXML
-    private void abrirListagemAluno(ActionEvent event) throws IOException {
+    private void abrirListagemNotas(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/ListagemAluno.fxml"));
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/ListagemNotas.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
-        stage.setTitle("Cadastrar aluno");
+        stage.setTitle("Cadastrar Notas");
         stage.setScene(scene);
         stage.show();
     }
@@ -64,5 +64,38 @@ public class MenuPrincipalController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-    
+
+    @FXML
+    private void abrirCadastroProfessor(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Professor.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Cadastrar Professor");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private void abrirCadastroEtapas(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Etapas.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Cadastrar Etapas");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private void abrirCadastroDisciplinas(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Disciplinas.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Cadastrar Disciplinas");
+        stage.setScene(scene);
+        stage.show();
+    }
+
 }

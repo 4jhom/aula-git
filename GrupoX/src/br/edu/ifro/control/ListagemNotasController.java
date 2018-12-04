@@ -20,7 +20,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-public class ListagemAlunoController implements Initializable {
+public class ListagemNotasController implements Initializable {
 
     @FXML
     private TableView<?> tbAlunos;
