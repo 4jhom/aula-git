@@ -16,7 +16,7 @@
             <items>
               <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAluno" text="Alunos" />
                   <MenuItem mnemonicParsing="false" onAction="#abrirListagemNotas" text="Listagem de Notas" />
-                  <MenuItem mnemonicParsing="false" onAction="#fecharProjeto" text="Fechar" />
+                  <MenuItem mnemonicParsing="false" onAction="#fecharProjeto" text="Notas" />
                   <MenuItem mnemonicParsing="false" onAction="#abrirCadastroProfessor" text="Professor" />
                   <MenuItem mnemonicParsing="false" onAction="#abrirCadastroEtapas" text="Etapas" />
                   <MenuItem mnemonicParsing="false" onAction="#abrirCadastroDisciplinas" text="Disciplinas" />
