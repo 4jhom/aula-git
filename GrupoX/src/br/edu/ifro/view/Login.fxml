@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="326.0" prefWidth="455.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.edu.ifro.control.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="326.0" prefWidth="455.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.LoginController">
   <children>
     <ImageView id="logo-grande.jpg" fitHeight="221.0" fitWidth="258.0" layoutX="106.0" layoutY="60.0" opacity="0.48">
       <image>
-        <Image url="@../img/logo-grande.jpg" preserveRatio="true" smooth="true" />
+        <Image preserveRatio="true" smooth="true" url="@../img/logo-grande.jpg" />
       </image>
     </ImageView>
     <Label layoutX="108.0" layoutY="89.0" text="Usuario" />

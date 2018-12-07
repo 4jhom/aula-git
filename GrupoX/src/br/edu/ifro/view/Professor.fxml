@@ -7,13 +7,13 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="208.0" prefWidth="374.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.edu.ifro.control.ProfessorController">
+<AnchorPane id="AnchorPane" prefHeight="208.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.ProfessorController">
   <children>
-    <AnchorPane id="AnchorPane" layoutX="2.0" layoutY="1.0" prefHeight="207.0" prefWidth="369.9998779296875">
+    <AnchorPane id="AnchorPane" layoutX="2.0" layoutY="1.0" prefHeight="207.0" prefWidth="369.9998779296875" style="-fx-background-color: white;">
       <children>
-        <ImageView id="logo-grande.jpg" fitHeight="121.0" fitWidth="133.0" layoutX="122.0" layoutY="44.0" opacity="0.5">
+        <ImageView id="logo-grande.jpg" fitHeight="153.0" fitWidth="166.0" layoutX="109.0" layoutY="27.0" opacity="0.5">
           <image>
-            <Image url="@../img/logo-grande.jpg" preserveRatio="true" smooth="true" />
+            <Image preserveRatio="true" smooth="true" url="@../img/logo-grande.jpg" />
           </image>
         </ImageView>
         <TextField fx:id="txtNome" layoutX="43.0" layoutY="73.0" />

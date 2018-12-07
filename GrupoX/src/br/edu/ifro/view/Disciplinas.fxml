@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="215.0" prefWidth="454.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.edu.ifro.control.DisciplinasController">
+<AnchorPane id="AnchorPane" prefHeight="215.0" prefWidth="454.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.DisciplinasController">
   <children>
     <Label layoutX="71.0" layoutY="61.0" text="Disciplina" />
     <TextField id="txtDisciplina" fx:id="txtDisciplinas" layoutX="71.0" layoutY="86.0" promptText="Disciplina" />
-    <Button id="btnSalvar" layoutX="307.0" layoutY="166.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
-    <Button id="btnFechar" layoutX="374.0" layoutY="166.0" mnemonicParsing="false" onAction="#fechar" text="Fechar" />
+    <Button id="btnSalvar" layoutX="328.0" layoutY="166.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+    <Button id="btnFechar" layoutX="393.0" layoutY="166.0" mnemonicParsing="false" onAction="#fechar" text="Fechar" />
+      <ImageView id="logo-grande.jpg" fitHeight="171.0" fitWidth="194.0" layoutX="130.0" layoutY="31.0" opacity="0.5">
+         <image>
+            <Image preserveRatio="true" smooth="true" url="@../img/logo-grande.jpg" />
+         </image>
+      </ImageView>
   </children>
 </AnchorPane>

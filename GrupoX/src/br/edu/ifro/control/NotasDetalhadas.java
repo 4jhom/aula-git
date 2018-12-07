@@ -1,6 +1,5 @@
 package br.edu.ifro.control;
 
-import br.edu.ifro.model.Pedido;
 import br.edu.ifro.model.Produto;
 import java.net.URL;
 import java.util.List;
@@ -19,7 +18,7 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 
 
-public class PedidoController implements Initializable {
+public class NotasDetalhadas implements Initializable {
 
     @FXML
     private ComboBox<Produto> cbProduto;
@@ -34,7 +33,7 @@ public class PedidoController implements Initializable {
     @FXML
     private Button btnRemover;
     
-    private Pedido pedido;
+    private br.edu.ifro.model.NotasDetalhadas pedido;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -46,7 +45,7 @@ public class PedidoController implements Initializable {
         
         cbProduto.setItems(FXCollections.observableArrayList(produtos));
         
-        pedido = new Pedido();
+        pedido = new br.edu.ifro.model.NotasDetalhadas();
     }  
 
     @FXML

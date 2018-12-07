@@ -10,7 +10,7 @@ import javax.persistence.ManyToMany;
 
 
 @Entity
-public class Pedido {
+public class NotasDetalhadas {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -19,7 +19,7 @@ public class Pedido {
     @ManyToMany
     private List<Produto> produtos;
     
-    public Pedido() {
+    public NotasDetalhadas() {
         produtos = new ArrayList<Produto>();
     }
     

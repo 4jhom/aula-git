@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" disable="false" opacity="0.89" prefHeight="444.0" prefWidth="775.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.edu.ifro.control.MenuPrincipalController">
+<AnchorPane id="AnchorPane" disable="false" opacity="0.89" prefHeight="444.0" prefWidth="775.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.MenuPrincipalController">
   <children>
-    <ImageView id="logo-grande.jpg" fitHeight="218.0" fitWidth="260.0" layoutX="258.0" layoutY="113.0" opacity="0.74">
+    <ImageView id="logo-grande.jpg" fitHeight="218.0" fitWidth="260.0" layoutX="258.0" layoutY="113.0">
       <image>
-        <Image url="@../img/logo-grande.jpg" preserveRatio="true" smooth="true" />
+        <Image preserveRatio="true" smooth="true" url="@../img/logo-grande.jpg" />
       </image>
     </ImageView>
     <MenuBar layoutX="0.0" layoutY="0.0" prefHeight="33.0" prefWidth="776.0">

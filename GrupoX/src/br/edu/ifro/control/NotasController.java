@@ -20,13 +20,13 @@ import javafx.scene.control.TextField;
 public class NotasController implements Initializable {
 
     @FXML
-    private ComboBox<?> cbNotas;
-    @FXML
     private TextField Nota;
     @FXML
     private ComboBox<?> cbEtapa;
     @FXML
     private ComboBox<?> cbDisciplina;
+    @FXML
+    private ComboBox<?> cbAluno;
 
     /**
      * Initializes the controller class.
