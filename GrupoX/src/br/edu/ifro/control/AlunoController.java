@@ -5,17 +5,13 @@
  */
 package br.edu.ifro.control;
 
+
 import br.edu.ifro.model.Aluno;
-import br.edu.ifro.model.Cidade;
-import br.eti.diegofonseca.MaskFieldUtil;
 import java.net.URL;
-import java.util.List;
 import java.util.ResourceBundle;
-import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javax.persistence.EntityManager;
@@ -23,45 +19,27 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
+
 /**
  * FXML Controller class
  *
- * @author erica
+ * @author Gabriel Abrão
  */
 public class AlunoController implements Initializable {
 
     @FXML
     private TextField txtNome;
-    
     @FXML
     private TextField txtTelefone;
     
     private Aluno aluno;
-    
-    @FXML
-    private ComboBox<Cidade> cbCidade;
-    
-    public void editarAluno(Aluno aluno) {
-        this.aluno = aluno;
-        txtNome.setText(aluno.getNome());
-        txtTelefone.setText(aluno.getTelefone());
-    }
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        MaskFieldUtil.foneField(txtTelefone);    
-        
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("aula");
-        EntityManager em = emf.createEntityManager();
-        
-        Query query = em.createQuery("SELECT c FROM Cidade c ");
-        List cidades = query.getResultList();
-        
-        cbCidade.setItems(FXCollections.observableArrayList(cidades));
-        
+        // TODO
     }    
 
     @FXML
@@ -81,24 +59,19 @@ public class AlunoController implements Initializable {
         }     
         
         aluno1.setNome(txtNome.getText());
-        // com mascara
+        
         aluno1.setTelefone(txtTelefone.getText());
         
-        aluno1.setCidade(cbCidade.getSelectionModel().getSelectedItem());
-        // sem mascara
-        //aluno1.setTelefone(MaskFieldUtil.onlyAlfaNumericValue(txtTelefone));
-        
-        em.getTransaction().begin();
+         em.getTransaction().begin();
         
         em.persist(aluno1);
         
         em.getTransaction().commit();
-        
     }
 
     @FXML
     private void fechar(ActionEvent event) {
-        Stage stage = (Stage) txtNome.getScene().getWindow();
+         Stage stage = (Stage) txtNome.getScene().getWindow();
         stage.close();
     }
     
