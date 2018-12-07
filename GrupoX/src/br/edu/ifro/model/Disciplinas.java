@@ -17,6 +17,11 @@ public class Disciplinas {
    private Integer id;
    private String Nome;    
 
+   @Override
+    public String toString(){
+     return Nome;
+    }
+    
     public Integer getId() {
         return id;
     }

@@ -11,7 +11,9 @@ import br.edu.ifro.model.Disciplinas;
 import br.edu.ifro.model.Etapas;
 import br.edu.ifro.model.Notas;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -37,11 +39,11 @@ public class NotasController implements Initializable {
     
      private Notas notas;
     @FXML
-    private ComboBox<?> cbAluno;
+    private ComboBox<Aluno> cbAluno;
     @FXML
-    private ComboBox<?> cbEtapa;
+    private ComboBox<Etapas> cbEtapa;
     @FXML
-    private ComboBox<?> cbDisciplina;
+    private ComboBox<Disciplinas> cbDisciplina;
     /**
      * Initializes the controller class.
      * @param url
@@ -49,8 +51,26 @@ public class NotasController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("aula");
+        EntityManager em = emf.createEntityManager();
+        
+        
+        
+        Query query = em.createQuery("SELECT a FROM Aluno a");
+        List aluno = query.getResultList();
+        cbAluno.setItems(FXCollections.observableArrayList(aluno));
+        
+         Query query1 = em.createQuery("SELECT a FROM Etapas a");
+        List Etapas = query1.getResultList();
+        cbEtapa.setItems(FXCollections.observableArrayList(Etapas));
+        
+        
+         Query query2 = em.createQuery("SELECT a FROM Disciplinas a");
+        List Disciplina = query.getResultList();
+        cbDisciplina.setItems(FXCollections.observableArrayList(Disciplina));
+    
+    } 
+    
 
     @FXML
     private void salvar(ActionEvent event) {

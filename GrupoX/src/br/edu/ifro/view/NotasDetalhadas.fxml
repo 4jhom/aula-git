@@ -8,8 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="296.0" prefWidth="536.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.control.NotasDetalhadasController">
+<AnchorPane id="AnchorPane" prefHeight="296.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.NotasDetalhadasController">
    <children>
       <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="291.0" prefWidth="566.0" style="-fx-background-color: white;">
          <children>
@@ -18,7 +17,7 @@
                   <Image preserveRatio="true" smooth="true" url="@../img/logo-grande.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="60.0" layoutY="72.0" text="Aluno" />
+            <Label layoutX="60.0" layoutY="71.0" text="Aluno" />
             <Label layoutX="366.0" layoutY="82.0" text="Nota">
                <font>
                   <Font size="16.0" />
@@ -26,7 +25,7 @@
             </Label>
             <Label layoutX="60.0" layoutY="131.0" text="Etapa" />
             <Label layoutX="60.0" layoutY="192.0" text="Disciplina" />
-            <ComboBox fx:id="cbAluno" layoutX="132.0" layoutY="68.0" opacity="0.56" prefWidth="150.0" />
+            <ComboBox fx:id="cbAluno" layoutX="132.0" layoutY="67.0" opacity="0.56" prefWidth="150.0" />
             <TextField fx:id="txtNotas" layoutX="366.0" layoutY="115.0" opacity="0.56" />
             <ComboBox fx:id="cbEtapa" layoutX="132.0" layoutY="127.0" opacity="0.56" prefWidth="150.0" />
             <ComboBox fx:id="cbDisciplina" layoutX="132.0" layoutY="188.0" opacity="0.56" prefWidth="150.0" />

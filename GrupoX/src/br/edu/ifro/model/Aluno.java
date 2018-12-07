@@ -15,7 +15,11 @@ public class Aluno {
     private String nome;    
     private String telefone;
     
-   
+    @Override
+    public String toString(){
+        return nome;
+    }
+    
     public Integer getId() {
         return id;
     }

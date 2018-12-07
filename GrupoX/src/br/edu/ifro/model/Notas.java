@@ -26,6 +26,8 @@ public class Notas {
     @ManyToOne
     private Disciplinas disciplinas;
 
+
+    
     public Aluno getAluno() {
         return aluno;
     }

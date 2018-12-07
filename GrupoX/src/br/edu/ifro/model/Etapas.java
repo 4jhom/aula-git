@@ -20,6 +20,10 @@ public class Etapas {
     private String terceira;    
     private String quarta;
 
+    @Override
+    public String toString(){
+    return primeira;
+    }
     public Integer getId() {
         return id;
     }
