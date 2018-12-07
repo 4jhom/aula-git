@@ -43,7 +43,6 @@ public class MenuPrincipalController implements Initializable {
         
     }
 
-    @FXML
     private void abrirListagemNotas(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/ListagemNotas.fxml"));

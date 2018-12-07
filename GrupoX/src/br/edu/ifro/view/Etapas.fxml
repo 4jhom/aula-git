@@ -4,18 +4,25 @@
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="262.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.EtapasController">
-   <children>
-      <Label layoutX="41.0" layoutY="90.0" text="Primeira Etapa" />
-      <Label layoutX="38.0" layoutY="114.0" prefHeight="17.0" prefWidth="83.0" text="Segunda Etapa" />
-      <Label layoutX="41.0" layoutY="140.0" prefHeight="17.0" prefWidth="77.0" text="Terceira Etapa" />
-      <Label layoutX="41.0" layoutY="167.0" text="Quarta Etapa" />
-      <TextField fx:id="txtPrimeira" layoutX="157.0" layoutY="86.0" />
-      <TextField fx:id="txtSegunda" layoutX="157.0" layoutY="110.0" />
-      <TextField fx:id="txtTerceira" layoutX="157.0" layoutY="136.0" />
-      <TextField fx:id="txtQuarta" layoutX="157.0" layoutY="163.0" />
-      <Button fx:id="btnSalvar" layoutX="334.0" layoutY="219.0" mnemonicParsing="false" text="Salvar" />
-   </children>
+<AnchorPane id="AnchorPane" prefHeight="262.0" prefWidth="441.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.edu.ifro.control.EtapasController">
+  <children>
+    <ImageView id="logo-grande.jpg" fitHeight="121.0" fitWidth="133.0" layoutX="154.0" layoutY="71.0" opacity="0.5">
+      <image>
+        <Image url="@../img/logo-grande.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="41.0" layoutY="90.0" text="Primeira Etapa" />
+    <Label layoutX="38.0" layoutY="114.0" prefHeight="17.0" prefWidth="83.0" text="Segunda Etapa" />
+    <Label layoutX="41.0" layoutY="140.0" prefHeight="17.0" prefWidth="77.0" text="Terceira Etapa" />
+    <Label layoutX="41.0" layoutY="167.0" text="Quarta Etapa" />
+    <TextField fx:id="txtPrimeira" layoutX="157.0" layoutY="86.0" opacity="0.91" />
+    <TextField fx:id="txtSegunda" layoutX="157.0" layoutY="110.0" opacity="0.91" />
+    <TextField fx:id="txtTerceira" layoutX="157.0" layoutY="136.0" opacity="0.91" />
+    <TextField fx:id="txtQuarta" layoutX="157.0" layoutY="163.0" />
+    <Button id="btnSalvar" layoutX="302.0" layoutY="219.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+    <Button layoutX="372.0" layoutY="219.0" mnemonicParsing="false" onAction="#fechar" text="Fechar" />
+  </children>
 </AnchorPane>

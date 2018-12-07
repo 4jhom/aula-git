@@ -6,11 +6,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="215.0" prefWidth="454.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.control.DisciplinasController">
-   <children>
-      <Label layoutX="71.0" layoutY="61.0" text="Disciplina" />
-      <TextField fx:id="txtDisciplina" layoutX="71.0" layoutY="86.0" promptText="Disciplina" />
-      <Button fx:id="btnSalvar" layoutX="361.0" layoutY="166.0" mnemonicParsing="false" onAction="#Salvar" text="Salvar" />
-   </children>
+<AnchorPane id="AnchorPane" prefHeight="215.0" prefWidth="454.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.edu.ifro.control.DisciplinasController">
+  <children>
+    <Label layoutX="71.0" layoutY="61.0" text="Disciplina" />
+    <TextField id="txtDisciplina" fx:id="txtDisciplinas" layoutX="71.0" layoutY="86.0" promptText="Disciplina" />
+    <Button id="btnSalvar" layoutX="307.0" layoutY="166.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+    <Button id="btnFechar" layoutX="374.0" layoutY="166.0" mnemonicParsing="false" onAction="#fechar" text="Fechar" />
+  </children>
 </AnchorPane>

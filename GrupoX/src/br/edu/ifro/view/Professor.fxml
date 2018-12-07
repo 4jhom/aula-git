@@ -4,22 +4,25 @@
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="208.0" prefWidth="374.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.control.ProfessorController">
-   <children>
-      <AnchorPane id="AnchorPane" layoutX="4.0" prefHeight="215.0" prefWidth="393.0">
-         <children>
-            <TextField fx:id="txtNome" layoutX="43.0" layoutY="73.0" />
-            <Label layoutX="43.0" layoutY="50.0" text="Nome" />
-            <Button fx:id="btnSalvar" layoutX="252.0" layoutY="180.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
-            <Button fx:id="btnFechar" layoutX="312.0" layoutY="180.0" mnemonicParsing="false" onAction="#fechar" text="Fechar" />
-            <Label layoutX="210.0" layoutY="50.0" text="Telefone" />
-            <TextField fx:id="txtTelefone" layoutX="210.0" layoutY="73.0" />
-            <Label layoutX="43.0" layoutY="114.0" text="Cidade" />
-            <ComboBox fx:id="cbCidade" layoutX="43.0" layoutY="139.0" prefHeight="25.0" prefWidth="318.0" />
-         </children>
-      </AnchorPane>
-   </children>
+<AnchorPane id="AnchorPane" prefHeight="208.0" prefWidth="374.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.edu.ifro.control.ProfessorController">
+  <children>
+    <AnchorPane id="AnchorPane" layoutX="2.0" layoutY="1.0" prefHeight="207.0" prefWidth="369.9998779296875">
+      <children>
+        <ImageView id="logo-grande.jpg" fitHeight="121.0" fitWidth="133.0" layoutX="122.0" layoutY="44.0" opacity="0.5">
+          <image>
+            <Image url="@../img/logo-grande.jpg" preserveRatio="true" smooth="true" />
+          </image>
+        </ImageView>
+        <TextField fx:id="txtNome" layoutX="43.0" layoutY="73.0" />
+        <Label layoutX="43.0" layoutY="50.0" text="Nome" />
+        <Button layoutX="210.0" layoutY="151.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+        <Button layoutX="283.0" layoutY="151.0" mnemonicParsing="false" onAction="#fechar" text="Fechar" />
+        <Label layoutX="210.0" layoutY="50.0" text="Telefone" />
+        <TextField fx:id="txtTelefone" layoutX="210.0" layoutY="73.0" />
+      </children>
+    </AnchorPane>
+  </children>
 </AnchorPane>
