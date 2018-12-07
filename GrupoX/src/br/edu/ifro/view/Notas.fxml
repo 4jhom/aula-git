@@ -16,15 +16,17 @@
          </image>
       </ImageView>
       <Label layoutX="60.0" layoutY="72.0" text="Aluno" />
-      <Label layoutX="366.0" layoutY="68.0" text="Nota">
+      <Label layoutX="366.0" layoutY="82.0" text="Nota">
          <font>
             <Font size="16.0" />
          </font></Label>
       <Label layoutX="60.0" layoutY="131.0" text="Etapa" />
       <Label layoutX="60.0" layoutY="192.0" text="Disciplina" />
-      <ComboBox fx:id="cbNotas" layoutX="132.0" layoutY="68.0" opacity="0.56" prefWidth="150.0" />
-      <TextField fx:id="Nota" layoutX="366.0" layoutY="105.0" opacity="0.56" />
+      <ComboBox fx:id="cbAluno" layoutX="132.0" layoutY="68.0" opacity="0.56" prefWidth="150.0" />
+      <TextField fx:id="txtNotas" layoutX="366.0" layoutY="115.0" opacity="0.56" />
       <ComboBox fx:id="cbEtapa" layoutX="132.0" layoutY="127.0" opacity="0.56" prefWidth="150.0" />
       <ComboBox fx:id="cbDisciplina" layoutX="132.0" layoutY="188.0" opacity="0.56" prefWidth="150.0" />
+      <Button layoutX="453.0" layoutY="233.0" mnemonicParsing="false" onAction="#fechar" text="Fechar" />
+      <Button layoutX="377.0" layoutY="233.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
    </children>
 </AnchorPane>

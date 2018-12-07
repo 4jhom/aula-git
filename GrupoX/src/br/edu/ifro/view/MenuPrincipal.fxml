@@ -22,7 +22,7 @@
         <Menu mnemonicParsing="false" text="Cadastros">
           <items>
             <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAluno" text="Alunos" />
-            <MenuItem mnemonicParsing="false" onAction="#fecharProjeto" text="Notas" />
+            <MenuItem mnemonicParsing="false" onAction="#AbrirNotas" text="Notas" />
             <MenuItem mnemonicParsing="false" onAction="#abrirCadastroProfessor" text="Professor" />
             <MenuItem mnemonicParsing="false" onAction="#abrirCadastroEtapas" text="Etapas" />
             <MenuItem mnemonicParsing="false" onAction="#abrirCadastroDisciplinas" text="Disciplinas" />
@@ -30,7 +30,7 @@
         </Menu>
         <Menu mnemonicParsing="false" text="Notas Detalhadas">
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#criarPedido" text="Notas Detalhadas" />
+            <MenuItem mnemonicParsing="false" onAction="#AbrirNotasDetalhadas" text="Notas Detalhadas" />
           </items>
         </Menu>
       </menus>

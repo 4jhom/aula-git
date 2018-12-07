@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 
 @Entity
@@ -13,7 +14,8 @@ public class Aluno {
     private Integer id;
     private String nome;    
     private String telefone;
-
+    
+   
     public Integer getId() {
         return id;
     }

@@ -5,20 +5,53 @@
  */
 package br.edu.ifro.model;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
-/**
- *
- * @author 79643035204
- */
+@Entity
 public class Notas {
      @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String valor; 
+    private String notas; 
 
+    @ManyToOne
+    private Aluno aluno;
+    @ManyToOne
+    private Etapas etapas;
+    @ManyToOne
+    private Disciplinas disciplinas;
+
+    public Aluno getAluno() {
+        return aluno;
+    }
+
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
+
+    public Etapas getEtapas() {
+        return etapas;
+    }
+
+    public void setEtapas(Etapas etapas) {
+        this.etapas = etapas;
+    }
+
+    public Disciplinas getDisciplinas() {
+        return disciplinas;
+    }
+
+    public void setDisciplinas(Disciplinas disciplinas) {
+        this.disciplinas = disciplinas;
+    }
+           
+    
+    
     public Integer getId() {
         return id;
     }
@@ -27,11 +60,11 @@ public class Notas {
         this.id = id;
     }
 
-    public String getValor() {
-        return valor;
+    public String getNotas() {
+        return notas;
     }
 
-    public void setValor(String valor) {
-        this.valor = valor;
+    public void setNotas(String valor) {
+        this.notas = valor;
     }
 }

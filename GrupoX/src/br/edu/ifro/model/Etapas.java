@@ -10,10 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-/**
- *
- * @author Gabriel Abrão
- */
+@Entity
 public class Etapas {
   @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

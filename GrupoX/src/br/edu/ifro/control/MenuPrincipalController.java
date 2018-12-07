@@ -38,28 +38,14 @@ public class MenuPrincipalController implements Initializable {
         stage.show();
     }
 
+   
     @FXML
-    private void fecharProjeto(ActionEvent event) {
-        
-    }
-
-    private void abrirListagemNotas(ActionEvent event) throws IOException {
+    private void AbrirNotas(ActionEvent event)  throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/ListagemNotas.fxml"));
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Notas.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
-        stage.setTitle("Cadastrar Notas");
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    @FXML
-    private void criarPedido(ActionEvent event)  throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Pedido.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("Criar pedido");
+        stage.setTitle("Notas");
         stage.setScene(scene);
         stage.show();
     }
@@ -96,5 +82,17 @@ public class MenuPrincipalController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+
+    @FXML
+    private void AbrirNotasDetalhadas(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/NotasDetalhadas.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Notas Detalhadas");
+        stage.setScene(scene);
+        stage.show();
+    }
+
 
 }
