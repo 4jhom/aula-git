@@ -11,7 +11,7 @@
   <children>
     <AnchorPane id="AnchorPane" layoutX="2.0" layoutY="1.0" prefHeight="207.0" prefWidth="369.9998779296875" style="-fx-background-color: white;">
       <children>
-        <ImageView id="logo-grande.jpg" fitHeight="153.0" fitWidth="166.0" layoutX="109.0" layoutY="27.0" opacity="0.5">
+        <ImageView id="logo-grande.jpg" fitHeight="153.0" fitWidth="166.0" layoutX="109.0" layoutY="27.0" opacity="0.77">
           <image>
             <Image preserveRatio="true" smooth="true" url="@../img/logo-grande.jpg" />
           </image>
